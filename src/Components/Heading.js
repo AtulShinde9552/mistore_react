@@ -1,8 +1,15 @@
 import React from 'react'
+import '../Styles/heading.css'
 
-const Heading = () => {
+const Heading = ({ text }) => {
   return (
-    <div>Heading</div>
+    <>
+      <div className='heading'>
+        <div></div>
+        <p>{text}</p>
+        <div></div>
+      </div>
+    </>
   )
 }
 

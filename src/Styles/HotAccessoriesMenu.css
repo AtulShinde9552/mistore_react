@@ -1,0 +1,9 @@
+.HotAccessoriesMenu{
+display: flex;
+justify-content: center;
+}
+
+.HotAccessoriesMenuLink{
+   text-decoration: none;
+   color: rgb(94, 94, 94);
+}
