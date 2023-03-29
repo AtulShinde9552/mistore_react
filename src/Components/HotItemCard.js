@@ -1,8 +1,13 @@
 import React from 'react'
+import '../Styles/HotItemCard.css'
 
-const HotItemCard = () => {
+const HotItemCard = ({image, name, price, index}) => {
   return (
-    <div>HotItemCard</div>
+    <div className='HotItemCard'>
+      <img src={image} alt={index} />
+      <p>{name}</p>
+      <span>{price}</span>
+    </div>
   )
 }
 
