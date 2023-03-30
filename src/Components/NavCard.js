@@ -1,8 +1,13 @@
 import React from 'react'
+import '../Styles/NavCard.css'
 
-const NavCard = () => {
+const NavCard = ({name, price, image, index}) => {
   return (
-    <div>NavCard</div>
+    <div className='NavCard'>
+      <img src={image} alt={`${index} phone`} />
+      <p>{name}</p>
+      <span>{price}</span>
+    </div>
   )
 }
 

@@ -1,8 +1,13 @@
 import React from 'react'
-
-const Videos = () => {
+import VideoCard from './VideoCard'
+import '../Styles/Videos.css'
+const Videos = (props) => {
   return (
-    <div>Videos</div>
+    <div className='Videos'>
+      {props.Videos.map((item, index)=>{
+       return <VideoCard index={index} key={item.image} image={item.image} name={item.name}  />
+      })}
+    </div>
   )
 }
 

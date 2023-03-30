@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import jsondata from '../data/data.json'
 import   '../Styles/nav.css'
 
@@ -11,20 +10,20 @@ const Navbar = () => {
 
       <div className="logo">
 
-        <Link to='/'>
+        <a href='/'>
           <img id="logoImage" src= {jsondata.logo} alt="Not" />
-        </Link>
+        </a>
 
       </div>
 
-      <Link className="navLinks" to="/miphones">Mi Phones</Link>
-      <Link className="navLinks" to="/redmiphones">Redmi Phones</Link>
-      <Link className="navLinks" to="/tv">TV</Link>
-      <Link className="navLinks" to="/laptops">Laptops</Link>
-      <Link className="navLinks" to="/lifestyle">Fitness & Lifestyle</Link>
-      <Link className="navLinks" to="/home">Home</Link>
-      <Link className="navLinks" to="/audio">Radio</Link>
-      <Link className="navLinks" to="/accessories">Accessories</Link>
+      <a className="navLinks" href="/miphones">Mi Phones</a>
+      <a className="navLinks" href="/redmiphones">Redmi Phones</a>
+      <a className="navLinks" href="/tv">TV</a>
+      <a className="navLinks" href="/laptop">Laptops</a>
+      <a className="navLinks" href="/fitnessAndLifeStyle">Fitness & Lifestyle</a>
+      <a className="navLinks" href="/home">Home</a>
+      <a className="navLinks" href="/audio">Audio</a>
+      <a className="navLinks" href="/accessories">Accessories</a>
 
       <div className="searchbox">
         <input type="text" name="search" placeholder="Search Products" />

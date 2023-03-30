@@ -1,8 +1,13 @@
 import React from 'react'
-
-const ProductReviews = () => {
+import ProductReviewCard from './ProductReviewCard'
+import '../Styles/ProductReviews.css'
+const ProductReviews = (props) => {
   return (
-    <div>ProductReviews</div>
+     <div className='ProductReviews'>
+      {props.ProductReviews.map((item, index)=>{
+     return <ProductReviewCard price={item.price} name={item.name} image={item.image} review={item.review} index={index} key={item.image}   />
+      })}
+     </div>
   )
 }
 
