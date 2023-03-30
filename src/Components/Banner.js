@@ -8,7 +8,7 @@ const Banner = ({banner}) => {
 
 {banner.end.map((item,index)=>(
   
-  <Carousel.Item key={item.image}  id="banner" interval={1000} keyboard={true}>
+  <Carousel.Item key={item.image}  id="banner" interval={1000} keyboard={'true'}>
 <img
 className="d-block w-100 "
 id="bannerImage"

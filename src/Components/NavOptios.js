@@ -15,28 +15,28 @@ const NavOptios = ({ miPhones, redmiPhones, tv, laptop, fitnessAndLifeStyle, hom
 
   useEffect(() => {
     if (window.location.pathname === '/miphones') {
-      return setmiPhonesToggle(true)
+      return setmiPhonesToggle("true")
     }
     if (window.location.pathname === '/redmiphones') {
-      return setredmiPhonesToggle(true)
+      return setredmiPhonesToggle("true")
     }
     if (window.location.pathname === '/tv') {
-      return settvToggle(true)
+      return settvToggle('true')
     }
     if (window.location.pathname === '/laptop') {
-      return setlaptopToggle(true)
+      return setlaptopToggle('true')
     }
     if (window.location.pathname === '/fitnessAndLifeStyle') {
-      return setfitnessAndLifeStyleToggle(true)
+      return setfitnessAndLifeStyleToggle('true')
     }
     if (window.location.pathname === '/home') {
-      return sethomeToggle(true)
+      return sethomeToggle('true')
     }
     if (window.location.pathname === '/audio') {
-      return setaudioToggle(true)
+      return setaudioToggle('true')
     }
     if (window.location.pathname === '/accessories') {
-      return setaccessoriesToggle(true)
+      return setaccessoriesToggle('true')
     }
   }, [])
 
