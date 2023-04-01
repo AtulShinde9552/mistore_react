@@ -6,7 +6,7 @@ const playButton = <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox
 const VideoCard = (props) => {
   return (
     <div className='VideoCard'  style={{backgroundImage:`url(${props.image})`}}>
-      <a href="#">{playButton}</a>
+      <a href="/">{playButton}</a>
       <p>{props.name}</p>
 
     </div>
